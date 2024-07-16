@@ -45,6 +45,7 @@ WHERE category= 'Kitchen Supplies'
 ORDER BY price;
 
 #Come up with your own question about the data and try to answer it using SQL.
-SELECT SUM(stock_quantity) AS total_air_purifiers_in_stock
+SELECT item_name, stock_quantity
 FROM superstore
-WHERE item_name = 'Air Purifier';
+WHERE item_name = 'Air Purifier'
+ORDER BY item_name;
