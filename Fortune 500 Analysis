@@ -86,7 +86,7 @@ FROM fortune_companies
 WHERE healthcare_benefits=1
 ORDER BY company_name ASC;
 
-#Finding the companies average employee tunure as "Stable", "Moderate", Or "High Turnover" based on the thresholds.
+#Finding the companies average employee tenure as "Stable", "Moderate", Or "High Turnover" based on the thresholds.
 SELECT company_name, avg_employee_tenure,
 CASE WHEN avg_employee_tenure >= 7 THEN 'Stable'
 WHEN avg_employee_tenure BETWEEN 4 AND 6.9 THEN 'Moderate'
